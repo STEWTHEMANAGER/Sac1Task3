@@ -196,6 +196,5 @@ namespace Sac1Task3
                 if (t.Rating == inVal) t.Rating = outVal;
             }
         }
-        //check
     }
 }
