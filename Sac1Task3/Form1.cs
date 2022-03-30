@@ -39,7 +39,7 @@ namespace Sac1Task3
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //
+            //Fileialog Params
             openFileDialog.Filter = " CSV | *.csv| Text File | *.txt";
             openFileDialog.InitialDirectory = Path.GetDirectoryName(path);
             openFileDialog.FileName = "Task3_Shop_Data.csv";
@@ -150,11 +150,7 @@ namespace Sac1Task3
         private void sort()
         {
             //converts all "none" values in the ratings column to 0 so it can be parsed for selection sorting calculations
-            foreach (Textbooks entry in bookList)
-            {
-                Textbooks t = entry;
-                if (t.Rating == "none") t.Rating = "0";
-            }
+            in_Out("none", "0");
 
             for (int a = 0; a < displayList.Count; a++)
             {
@@ -178,19 +174,27 @@ namespace Sac1Task3
                 }
             }
             //converts all "0"s in the ratings columns back to "none" for accuracy sake
-            foreach (Textbooks entry in displayList)
-            {
-                Textbooks t = entry;
-                if (t.Rating == "0") t.Rating = "none";
-            }
+            in_Out("0", "none");
         }
 
         private void cmbxFilter_SelectedIndexChanged(object sender, EventArgs e)
         {
+            //clears filter
+            txtbxFilter.Text = "";
+        
             //calls sort if "Ratings" is selected in the combo box
             if (cmbxFilter.SelectedIndex == 2) sort();
             dgvTable.DataSource = bs;
             bs.ResetBindings(false);
+        }
+        
+        private void in_Out(string inVal, string outVal)
+        {
+            foreach (Textbooks entry in displayList)
+            {
+                Textbooks t = entry;
+                if (t.Rating == inVal) t.Rating = outVal;
+            }
         }
     }
 }
