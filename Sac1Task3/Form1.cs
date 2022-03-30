@@ -44,7 +44,7 @@ namespace Sac1Task3
             openFileDialog.InitialDirectory = Path.GetDirectoryName(path);
             openFileDialog.FileName = "Task3_Shop_Data.csv";
 
-            //resets the table and total profit value
+            //resets the table
             dgvTable.Rows.Clear();
 
             //opens file dialog and checks if OK is pressed
