@@ -1,0 +1,10 @@
+C:\Users\fynnk\source\repos\Sac1Task3\obj\Debug\Sac1Task3.csproj.AssemblyReference.cache
+C:\Users\fynnk\source\repos\Sac1Task3\obj\Debug\Sac1Task3.Form1.resources
+C:\Users\fynnk\source\repos\Sac1Task3\obj\Debug\Sac1Task3.Properties.Resources.resources
+C:\Users\fynnk\source\repos\Sac1Task3\obj\Debug\Sac1Task3.csproj.GenerateResource.cache
+C:\Users\fynnk\source\repos\Sac1Task3\obj\Debug\Sac1Task3.csproj.CoreCompileInputs.cache
+C:\Users\fynnk\source\repos\Sac1Task3\bin\Debug\Sac1Task3.exe.config
+C:\Users\fynnk\source\repos\Sac1Task3\bin\Debug\Sac1Task3.exe
+C:\Users\fynnk\source\repos\Sac1Task3\bin\Debug\Sac1Task3.pdb
+C:\Users\fynnk\source\repos\Sac1Task3\obj\Debug\Sac1Task3.exe
+C:\Users\fynnk\source\repos\Sac1Task3\obj\Debug\Sac1Task3.pdb
