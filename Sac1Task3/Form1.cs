@@ -110,7 +110,7 @@ namespace Sac1Task3
             displayList.Clear();
             foreach (Textbooks entry in bookList)
             {
-                //if subject contains the search text
+                //if Subject contains the search text
                 if (entry.Subject.ToLower().Contains(txtbxFilter.Text.ToLower()))
                 {
                     displayList.Add(entry);
@@ -179,15 +179,15 @@ namespace Sac1Task3
 
         private void cmbxFilter_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //clears filter
+            //clears filter 
             txtbxFilter.Text = "";
-        
+
             //calls sort if "Ratings" is selected in the combo box
             if (cmbxFilter.SelectedIndex == 2) sort();
             dgvTable.DataSource = bs;
             bs.ResetBindings(false);
         }
-        
+
         private void in_Out(string inVal, string outVal)
         {
             foreach (Textbooks entry in displayList)
